@@ -1,0 +1,13 @@
+.site-main {
+	margin: 20px;
+
+	.button-link{
+		a{
+			background-color: $color__link;
+			border-radius: 5px;
+			color: $color__text-main;
+			padding: 5px 12px;
+			justify-content: center;
+		}
+	}
+}
