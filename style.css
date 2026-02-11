@@ -661,6 +661,14 @@ textarea {
 	font-size: 1.5em;
 }
 
+.home .wp-block-accordion-heading {
+	background-color: #f57b60;
+}
+
+.home .wp-block-accordion-panel ul {
+	text-align: left;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/

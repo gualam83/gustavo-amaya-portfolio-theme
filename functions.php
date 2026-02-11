@@ -143,6 +143,9 @@ function gustavo_amaya_scripts() {
 
 	wp_enqueue_script( 'gustavo-amaya-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+	// Expertise hover interaction
+	wp_enqueue_script( 'gustavo-amaya-expertise', get_template_directory_uri() . '/js/expertise.js', array(), _S_VERSION, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -185,3 +188,13 @@ function gustavo_amaya_enqueue_fonts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'gustavo_amaya_enqueue_fonts' );
+
+function ca_enqueue_font_awesome() {
+	wp_enqueue_style(
+		'font-awesome',
+		'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css',
+		array(),
+		'6.4.2'
+	);
+}
+add_action( 'wp_enqueue_scripts', 'ca_enqueue_font_awesome' );
