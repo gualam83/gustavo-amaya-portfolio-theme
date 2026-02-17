@@ -11,21 +11,34 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gustavo-amaya' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'gustavo-amaya' ), 'WordPress' );
-				?>
+<footer id="colophon" class="site-footer">
+	<div class="ga-footer-container">
+
+		<!-- Logo -->
+		<div class="ga-footer-logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo-gustavo-amaya-developer-white.svg"
+					 alt="<?php bloginfo('gustavo-amaya-developer'); ?>" />
 			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'gustavo-amaya' ), 'gustavo-amaya', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+		</div>
+
+		<!-- Social Links -->
+		<div class="ga-footer-social">
+			<a href="https://github.com/gualam83" target="_blank" aria-label="GitHub">
+				<i class="fa-brands fa-github"></i>
+			</a>
+			<a href="https://linkedin.com/in/gustavo-amaya-bernal" target="_blank" aria-label="LinkedIn">
+				<i class="fa-brands fa-linkedin"></i>
+			</a>
+		</div>
+
+		<!-- Copyright -->
+		<div class="ga-footer-copy">
+			&copy; <?php echo date('Y'); ?> <?php bloginfo('gustavo-amaya-developer'); ?>
+		</div>
+
+	</div>
+</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

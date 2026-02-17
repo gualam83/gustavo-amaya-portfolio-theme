@@ -1,26 +1,255 @@
+html {
+	scroll-behavior: smooth;
+}
+
+[id] {
+	scroll-margin-top: 120px;
+}
 
 .home {
+	margin-top: -32px !important;
 	text-align: center;
 
 	.entry-title {
 		display: none;
 	}
 
-	.projects-button {
-		justify-content: center;
+	.ga-box {
+		padding: 1em;
+
+		@media (min-width: 64em) {
+			padding: 6em;
+		}
 	}
 
-	.name-hero {
-		font-size: 1.5em;
-	}
+	.ga-hero {
+		padding-bottom: 0;
+		padding-top: 2em;
 
-	.wp-block-accordion-heading {
-		background-color: $color__background-button;
-	}
+		.ga-headline {
+			.ga-hello {
+				font-size: 1.5em;
+			}
 
-	.wp-block-accordion-panel {
-		ul {
+			.name-hero {
+				font-size: 1.2em;
+			}
+
+			.projects-button {
+				justify-content: center;
+
+				@media (min-width: 48em) {
+					justify-self: flex-start;
+				}
+			}
+
+			@media (min-width: 64em) {
+				font-size: 1.3em;
+				width: 60%;
+			}
+		}
+
+		.image-hero {
+			@media (min-width: 64em) {
+				width: 40%;
+			}
+		}
+
+		@media (min-width: 48em) {
 			text-align: left;
+
+			> .wp-block-group__inner-container {
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				align-items: center;
+			}
+		}
+	}
+
+	.ga-featured-skills {
+		background-color: #96969626;
+		color: #757575;
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		margin-top: 1em;
+		gap: 0.5em;
+
+		& > * {
+			flex-basis: auto !important;
+		}
+	}
+
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+		flex-basis: auto !important;
+	}
+
+	.ga-about {
+		& > .wp-block-group__inner-container {
+			@media (min-width: 48em) {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+
+				& > * {
+					flex: 1;
+				}
+			}
+
+			@media (min-width: 64em) {
+				flex-direction: row;
+			}
+		}
+
+		.ga-about-content {
+			@media (min-width: 64em) {
+				font-size: 1.3em;
+				text-align: left;
+			}
+		}
+	}
+
+	.ga-skills {
+		background-color: #001d3a;
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		padding: 3em 0;
+
+		.ga-skills-container {
+			padding: 2em;
+
+			.wp-block-accordion-heading {
+				background-color: $color__background-button;
+			}
+
+			.ga-accordion {
+				.wp-block-accordion-item {
+					&.is-open {
+						.wp-block-accordion-panel {
+							display: flex !important;
+							flex-wrap: wrap;
+							gap: 0 3em;
+							justify-content: center;
+						}
+					}
+				}
+			}
+
+			.ga-skills-img {
+				display: none;
+
+				@media (min-width: 64em) {
+					display: block;
+				}
+			}
+
+			.wp-block-accordion-panel {
+				ul {
+					text-align: left;
+				}
+			}
+
+			@media (min-width: 48em) {
+				padding: 0 6em;
+
+				& > .wp-block-group__inner-container {
+					display: flex;
+					align-items: center;
+					gap: 3em;
+
+					& > * {
+						flex: 1;
+					}
+				}
+			}
+		}
+	}
+
+	.ga-contact {
+		h2 {
+			margin-bottom: 3em;
+		}
+
+		p {
+			@media (min-width: 48em) {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.6em;
+				justify-content: space-between;
+			}
+
+			span {
+				flex-basis: auto;
+
+				@media (min-width: 48em) {
+					flex-basis: 32%;
+				}
+
+				&[data-name="ga-text-area"] {
+					flex-basis: auto;
+
+					@media (min-width: 48em) {
+						flex-basis: 100%;
+					}
+				}
+
+				input {
+					background-color: $color__background-body;
+					margin-bottom: 1.5em;
+					width: 100%;
+					padding: 0.813em 1.25em ;
+
+					@media (min-width: 48em) {
+						margin-bottom: 0;
+					}
+
+					&.wpcf7 {
+						&-not-valid-tip{
+							color: $color__link;
+						}
+					}
+				}
+
+				textarea {
+					background-color: $color__background-body;
+					max-height: 8.125em;
+					padding: 0.813em 1.25em ;
+				}
+			}
+
+			.wpcf7-submit {
+				background-color: $color__background-button;
+				color: $color__text-input;
+				cursor: pointer;
+				margin: 0 auto;
+			}
+
+			.wpcf7-spinner {
+				flex-basis: 100%;
+				display: block;
+				margin-top: 0.5em;
+			}
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.ga-footer-container {
+		img {
+			max-width: 13.75em;
+		}
+
+		.ga-footer-social {
+			display: flex;
+			justify-content: center;
+			gap: 1em;
+
+			a {
+				font-size: 2em;
+				text-decoration: none;
+			}
 		}
 	}
 }

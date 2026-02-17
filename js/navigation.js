@@ -96,4 +96,35 @@
 			menuItem.classList.toggle( 'focus' );
 		}
 	}
+
+	/**
+	 * Show header on scroll
+	 */
+	const header = document.querySelector( '.site-header' );
+
+	if ( header ) {
+		window.addEventListener( 'scroll', function () {
+			if ( window.scrollY > 150 ) {
+				header.classList.add( 'is-visible' );
+			} else {
+				header.classList.remove( 'is-visible' );
+			}
+		} );
+	}
+
+	/**
+	 * Close mobile menu on link click
+	 */
+	const navMenu   = document.querySelector( '.main-navigation' );
+	const menuLinks = document.querySelectorAll( '.main-navigation a' );
+
+	menuLinks.forEach( link => {
+		link.addEventListener( "click", onCloseMobileMenu );
+	} );
+
+	function onCloseMobileMenu( event ) {
+		if ( navMenu.classList.contains( 'toggled' ) ) {
+			navMenu.classList.remove( 'toggled' );
+		}
+	}
 }() );
