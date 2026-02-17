@@ -76,6 +76,10 @@
 			transition: transform 0.3s ease;
 			z-index: 999;
 
+			@media (min-width: 48em) {
+				padding: 0;
+			}
+
 			.admin-bar & {
 				padding: 126px 0;
 

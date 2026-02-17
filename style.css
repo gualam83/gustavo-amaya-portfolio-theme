@@ -470,6 +470,7 @@ big {
 --------------------------------------------- */
 body {
 	background: #0b0f14;
+	overflow-x: hidden;
 }
 
 hr {
@@ -989,6 +990,12 @@ html {
 	transform: translateX(-100%);
 	transition: transform 0.3s ease;
 	z-index: 999;
+}
+
+@media (min-width: 48em) {
+	.site-header .main-navigation .nav-menu {
+		padding: 0;
+	}
 }
 
 .admin-bar .site-header .main-navigation .nav-menu {
