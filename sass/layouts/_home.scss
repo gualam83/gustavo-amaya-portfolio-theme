@@ -176,6 +176,7 @@ html {
 				flex-wrap: wrap;
 				gap: 0.6em;
 				justify-content: space-between;
+				position: relative;
 			}
 
 			span {
@@ -225,9 +226,12 @@ html {
 			}
 
 			.wpcf7-spinner {
-				flex-basis: 100%;
-				display: block;
-				margin-top: 0.5em;
+				position: absolute;
+				top: 100%;
+				left: 48%;
+				transform: translateX(-50%);
+				width: 24px;
+				height: 24px;
 			}
 
 			br {
