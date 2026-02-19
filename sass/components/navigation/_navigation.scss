@@ -78,6 +78,7 @@
 
 			@media (min-width: 48em) {
 				padding: 0;
+				width: 100%;
 			}
 
 			.admin-bar & {
@@ -157,18 +158,26 @@
 	@media (min-width: 48em) {
 		display: flex;
 		position: fixed;
-		top: -120px;
 		background-color: #2e2e2e;
-		margin-top: 0;
+		margin-top: -24px;
 		padding: 0.3em 5em;
-		transition: top 0.3s ease;
+		transition: all 0.3s ease;
 		width: 100%;
 		z-index: 999;
 		justify-content: space-between;
 		align-items: center;
 
-		&.is-visible {
-			top: 0;
+		img {
+			max-width: 100%;
+			transition: all 0.3s ease;
+		}
+
+		&.is-scrolled {
+			padding: 5px;
+
+			img {
+				max-width: 50%;
+			}
 		}
 
 		.main-navigation {
@@ -212,18 +221,6 @@
 		.nav-next {
 			text-align: end;
 			flex: 1 0 50%;
-		}
-	}
-}
-
-@media (min-width: 48em) {
-	.admin-bar .site-header.is-visible {
-		top: 32px;
-	}
-
-	@media (max-width: 782px) {
-		.admin-bar .site-header.is-visible {
-			top: 46px;
 		}
 	}
 }

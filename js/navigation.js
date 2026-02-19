@@ -100,17 +100,17 @@
 	/**
 	 * Show header on scroll
 	 */
-	const header = document.querySelector( '.site-header' );
+	document.addEventListener( "DOMContentLoaded", function () {
+		const header = document.querySelector( ".site-header" );
 
-	if ( header ) {
-		window.addEventListener( 'scroll', function () {
-			if ( window.scrollY > 150 ) {
-				header.classList.add( 'is-visible' );
+		window.addEventListener( "scroll", function () {
+			if ( window.scrollY > 50 ) {
+				header.classList.add( "is-scrolled" );
 			} else {
-				header.classList.remove( 'is-visible' );
+				header.classList.remove( "is-scrolled" );
 			}
 		} );
-	}
+	} );
 
 	/**
 	 * Close mobile menu on link click

@@ -21,7 +21,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -49,35 +48,26 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-
 /* =========================
    Backgrounds
 ========================= */
-
 /* =========================
    Text colors
 ========================= */
-
 /* =========================
    Links
 ========================= */
-
 /* =========================
    Borders
 ========================= */
-
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
-
 /* Normalize
 --------------------------------------------- */
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 /* Document
 	 ========================================================================== */
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -89,7 +79,6 @@ html {
 
 /* Sections
 	 ========================================================================== */
-
 /**
  * Remove the margin in all browsers.
  */
@@ -115,7 +104,6 @@ h1 {
 
 /* Grouping content
 	 ========================================================================== */
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -137,7 +125,6 @@ pre {
 
 /* Text-level semantics
 	 ========================================================================== */
-
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -203,7 +190,6 @@ sup {
 
 /* Embedded content
 	 ========================================================================== */
-
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -213,7 +199,6 @@ img {
 
 /* Forms
 	 ========================================================================== */
-
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -359,7 +344,6 @@ textarea {
 
 /* Interactive
 	 ========================================================================== */
-
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
@@ -376,7 +360,6 @@ summary {
 
 /* Misc
 	 ========================================================================== */
-
 /**
  * Add the correct display in IE 10+.
  */
@@ -393,7 +376,6 @@ template {
 
 /* Box sizing
 --------------------------------------------- */
-
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -409,7 +391,6 @@ html {
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-
 /* Typography
 --------------------------------------------- */
 body,
@@ -492,8 +473,8 @@ body {
 	overflow-x: hidden;
 }
 
-.page-id-202 header,
-.page-id-202 footer {
+.page-id-205 header,
+.page-id-205 footer {
 	display: none !important;
 }
 
@@ -562,9 +543,7 @@ a:visited {
 	color: #f3a090;
 }
 
-a:hover,
-a:focus,
-a:active {
+a:hover, a:focus, a:active {
 	color: #f9b2a3;
 }
 
@@ -572,8 +551,7 @@ a:focus {
 	outline: thin dotted;
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
 	outline: 0;
 }
 
@@ -599,8 +577,7 @@ input[type="submit"]:hover {
 	border-color: #f3a090;
 }
 
-button:active,
-button:focus,
+button:active, button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -648,7 +625,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #fff;
+	color: #ffffff;
 }
 
 select {
@@ -683,7 +660,6 @@ html {
 }
 
 .home {
-	margin-top: -32px !important;
 	text-align: center;
 }
 
@@ -696,7 +672,6 @@ html {
 }
 
 @media (min-width: 64em) {
-
 	.home .ga-box {
 		padding: 6em;
 	}
@@ -720,14 +695,12 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.home .ga-hero .ga-headline .projects-button {
 		justify-self: flex-start;
 	}
 }
 
 @media (min-width: 64em) {
-
 	.home .ga-hero .ga-headline {
 		font-size: 1.3em;
 		width: 60%;
@@ -735,18 +708,15 @@ html {
 }
 
 @media (min-width: 64em) {
-
 	.home .ga-hero .image-hero {
 		width: 40%;
 	}
 }
 
 @media (min-width: 48em) {
-
 	.home .ga-hero {
 		text-align: left;
 	}
-
 	.home .ga-hero > .wp-block-group__inner-container {
 		display: flex;
 		flex-wrap: nowrap;
@@ -773,27 +743,23 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.home .ga-about > .wp-block-group__inner-container {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 	}
-
 	.home .ga-about > .wp-block-group__inner-container > * {
 		flex: 1;
 	}
 }
 
 @media (min-width: 64em) {
-
 	.home .ga-about > .wp-block-group__inner-container {
 		flex-direction: row;
 	}
 }
 
 @media (min-width: 64em) {
-
 	.home .ga-about .ga-about-content {
 		font-size: 1.3em;
 		text-align: left;
@@ -827,7 +793,6 @@ html {
 }
 
 @media (min-width: 64em) {
-
 	.home .ga-skills .ga-skills-container .ga-skills-img {
 		display: block;
 	}
@@ -838,17 +803,14 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.home .ga-skills .ga-skills-container {
 		padding: 0 6em;
 	}
-
 	.home .ga-skills .ga-skills-container > .wp-block-group__inner-container {
 		display: flex;
 		align-items: center;
 		gap: 3em;
 	}
-
 	.home .ga-skills .ga-skills-container > .wp-block-group__inner-container > * {
 		flex: 1;
 	}
@@ -859,7 +821,6 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.home .ga-contact p {
 		display: flex;
 		flex-wrap: wrap;
@@ -874,7 +835,6 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.home .ga-contact p span {
 		flex-basis: 32%;
 	}
@@ -885,7 +845,6 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.home .ga-contact p span[data-name="ga-text-area"] {
 		flex-basis: 100%;
 	}
@@ -899,7 +858,6 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.home .ga-contact p span input {
 		margin-bottom: 0;
 	}
@@ -953,7 +911,6 @@ html {
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-
 /* Navigation
 --------------------------------------------- */
 .site-header {
@@ -965,7 +922,6 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.site-header .site-branding {
 		display: block;
 		max-width: 6em;
@@ -997,9 +953,8 @@ html {
 	transition: all 0.3s ease;
 }
 
-.site-header .menu-toggle .hamburger::before,
-.site-header .menu-toggle .hamburger::after {
-	content: "";
+.site-header .menu-toggle .hamburger::before, .site-header .menu-toggle .hamburger::after {
+	content: '';
 	position: absolute;
 	left: 0;
 	width: 30px;
@@ -1022,7 +977,6 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.admin-bar .site-header .menu-toggle {
 		top: calc(1.5rem + 32px);
 	}
@@ -1047,9 +1001,9 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.site-header .main-navigation .nav-menu {
 		padding: 0;
+		width: 100%;
 	}
 }
 
@@ -1058,7 +1012,6 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.admin-bar .site-header .main-navigation .nav-menu {
 		padding: 0;
 		width: 100%;
@@ -1113,14 +1066,12 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.site-header .main-navigation ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
 		gap: 2rem;
 	}
-
 	.site-header .main-navigation li:hover > ul,
 	.site-header .main-navigation li.focus > ul {
 		left: auto;
@@ -1128,25 +1079,28 @@ html {
 }
 
 @media (min-width: 48em) {
-
 	.site-header {
 		display: flex;
 		position: fixed;
-		top: -120px;
 		background-color: #2e2e2e;
-		margin-top: 0;
+		margin-top: -24px;
 		padding: 0.3em 5em;
-		transition: top 0.3s ease;
+		transition: all 0.3s ease;
 		width: 100%;
 		z-index: 999;
 		justify-content: space-between;
 		align-items: center;
 	}
-
-	.site-header.is-visible {
-		top: 0;
+	.site-header img {
+		max-width: 100%;
+		transition: all 0.3s ease;
 	}
-
+	.site-header.is-scrolled {
+		padding: 5px;
+	}
+	.site-header.is-scrolled img {
+		max-width: 50%;
+	}
 	.site-header .main-navigation .nav-menu {
 		position: static;
 		height: auto;
@@ -1157,20 +1111,16 @@ html {
 		justify-content: flex-end;
 		gap: 3em;
 	}
-
 	.site-header .main-navigation .nav-menu a {
 		white-space: nowrap;
 	}
-
 	.site-header .menu-toggle {
 		display: none;
 	}
 }
 
-.site-main .site-header .comment-navigation,
-.site-main
-.site-header .posts-navigation,
-.site-main
+.site-main .site-header .comment-navigation, .site-main
+.site-header .posts-navigation, .site-main
 .site-header .post-navigation {
 	margin: 0 0 1.5em;
 }
@@ -1192,20 +1142,6 @@ html {
 .site-header .post-navigation .nav-next {
 	text-align: end;
 	flex: 1 0 50%;
-}
-
-@media (min-width: 48em) {
-
-	.admin-bar .site-header.is-visible {
-		top: 32px;
-	}
-}
-
-@media (min-width: 48em) and (max-width: 782px) {
-
-	.admin-bar .site-header.is-visible {
-		top: 46px;
-	}
 }
 
 /* Posts and pages
@@ -1344,10 +1280,8 @@ html {
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
-
 /* Jetpack infinite scroll
 --------------------------------------------- */
-
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
@@ -1362,10 +1296,8 @@ html {
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-
 /* Accessibility
 --------------------------------------------- */
-
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	border: 0;
@@ -1408,20 +1340,16 @@ html {
 /* Alignments
 --------------------------------------------- */
 .alignleft {
-
 	/*rtl:ignore*/
 	float: left;
-
 	/*rtl:ignore*/
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
 .alignright {
-
 	/*rtl:ignore*/
 	float: right;
-
 	/*rtl:ignore*/
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
@@ -1434,3 +1362,5 @@ html {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+/*# sourceMappingURL=style.css.map */
