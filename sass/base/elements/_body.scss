@@ -1,4 +1,36 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
 	overflow-x: hidden;
+
+	.error-404 {
+		text-align: center;
+		padding: 100px 0;
+
+		.error-404-actions {
+			display: flex
+		;
+			flex-wrap: wrap;
+			flex-direction: column;
+			gap: 15px;
+		}
+	}
+
+	.ga-footer-container {
+		text-align: center;
+
+		img {
+			max-width: 13.75em;
+		}
+
+		.ga-footer-social {
+			display: flex;
+			justify-content: center;
+			gap: 1em;
+
+			a {
+				font-size: 2em;
+				text-decoration: none;
+			}
+		}
+	}
 }
